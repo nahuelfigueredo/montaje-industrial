@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGENIERIA LYH SRL - Montaje Industrial</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e7ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+        .contact-info {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 14px;
+            text-align: right;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ddefff;
+            padding: 10px;
+            width: 100%;
+        }
+        nav a {
+            color: #004080;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #0055b3;
+            border-radius: 5px;
+            color: white;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .contact-details {
+            width: 40%;
+            font-size: 14px;
+            text-align: left;
+        }
+        form {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #0055b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo INGENIERIA LYH SRL">
+        <h1 style="display: inline;">INGENIERIA LYH SRL</h1>
+        <p>Montaje Industrial y Servicios</p>
+        <div class="contact-info">
+            <a href="#contacto"><i class="fas fa-phone"></i> (0221) 4643037 | <i class="fas fa-envelope"></i> info@ingenierialyh.com.ar</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+        <a href="#empresa"><i class="fas fa-building"></i> La Empresa</a>
+        <a href="#servicios"><i class="fas fa-cogs"></i> Nuestros Servicios</a>
+        <a href="#flota"><i class="fas fa-truck"></i> Flota</a>
+        <a href="#equipos"><i class="fas fa-tools"></i> Equipos</a>
+        <a href="#obras"><i class="fas fa-hard-hat"></i> Obras</a>
+        <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+    </nav>
+    <section id="contacto" class="section">
+        <div class="contact-details">
+            <h2>Contacto</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Oficinas:</strong> 148 / 7y8 N° 582-1923, Berisso – Buenos Aires, Argentina</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Taller central:</strong> La Portada N° 3953 – Buenos Aires, Argentina</p>
+            <p><i class="fas fa-phone"></i> (0221) 464-3037 y 461-6511</p>
+        </div>
+        <form>
+            <label>Nombre *</label>
+            <input type="text" required>
+            <label>Correo electrónico *</label>
+            <input type="email" required>
+            <label>Comentario o mensaje *</label>
+            <textarea rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
